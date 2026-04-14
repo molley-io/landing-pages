@@ -1,0 +1,113 @@
+:root {
+  // Fonts
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-secondary: 'IBM Plex Mono', monospace;
+
+  // Colors — Primary (Molley brand cyan)
+  --el-color-primary: #019cca;
+  --el-color-primary-light-3: #34b3d7;
+  --el-color-primary-light-5: #80cde5;
+  --el-color-primary-light-7: #b3e1ef;
+  --el-color-primary-light-8: #ccecf5;
+  --el-color-primary-light-9: #e6f5fa;
+  --el-color-primary-dark-2: #017da2;
+
+  // Colors — Status
+  --el-color-success: #6bb172;
+  --el-color-success-light-9: #eff7f0;
+  --el-color-warning: #fea807;
+  --el-color-warning-light-9: #fff7e6;
+  --el-color-danger: #f2206b;
+  --el-color-danger-light-9: #fde9f0;
+  --el-color-info: #a978c9;
+  --el-color-info-light-9: #f5f0fa;
+
+  // Text
+  --el-text-color-primary: #23323e;
+  --el-text-color-regular: #435768;
+  --el-text-color-secondary: #657986;
+  --el-text-color-placeholder: #a8abb2;
+  --el-text-color-disabled: #c0c4cc;
+
+  // Backgrounds
+  --el-bg-color: #ffffff;
+  --el-bg-color-page: #f0f7fa;
+  --el-bg-color-overlay: #ffffff;
+
+  // Borders
+  --el-border-color: #c9e0ea;
+  --el-border-color-light: #dae9f1;
+  --el-border-color-lighter: #e8f1f5;
+  --el-border-color-extra-light: #f2f6fc;
+
+  // Border Radius
+  --el-border-radius-base: 0.25rem;
+  --el-border-radius-small: 0.125rem;
+  --el-border-radius-round: 1.25rem;
+  --el-border-radius-circle: 50%;
+
+  // Font Sizes
+  --el-font-size-extra-small: 0.75rem;
+  --el-font-size-small: 0.8125rem;
+  --el-font-size-base: 0.875rem;
+  --el-font-size-medium: 1rem;
+  --el-font-size-large: 1.125rem;
+  --el-font-size-extra-large: 1.25rem;
+
+  // Shadows
+  --el-box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.04), 0 8px 20px rgba(0, 0, 0, 0.08);
+  --el-box-shadow-light: 0 0 6px rgba(0, 0, 0, 0.12);
+  --el-box-shadow-lighter: 0 0 12px rgba(0, 0, 0, 0.12);
+  --el-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  --el-box-shadow-dark: 0 0 12px rgba(0, 0, 0, 0.24);
+
+  // Transitions
+  --el-transition-duration: 0.3s;
+  --el-transition-duration-fast: 0.2s;
+
+  // Component Sizes
+  --el-component-size: 32px;
+  --el-component-size-small: 24px;
+  --el-component-size-large: 40px;
+}
+
+// Dark mode — applied via data-theme attribute on <html>
+html[data-theme='dark'] {
+  --el-color-primary: #019cca;
+  --el-color-primary-light-3: #017da2;
+  --el-color-primary-light-5: #015e7a;
+  --el-color-primary-light-7: #013f51;
+  --el-color-primary-light-8: #01303d;
+  --el-color-primary-light-9: #1c2a30;
+  --el-color-primary-dark-2: #34b3d7;
+
+  --el-color-success: #6bb172;
+  --el-color-success-light-9: #1c2518;
+  --el-color-warning: #fea807;
+  --el-color-warning-light-9: #2b2111;
+  --el-color-danger: #f2206b;
+  --el-color-danger-light-9: #2b1d1d;
+  --el-color-info: #a978c9;
+  --el-color-info-light-9: #1e1e20;
+
+  --el-text-color-primary: #dce5ec;
+  --el-text-color-regular: #a1bbc9;
+  --el-text-color-secondary: #8397a6;
+  --el-text-color-placeholder: #5a6d7a;
+  --el-text-color-disabled: #4a5a65;
+
+  --el-bg-color: #1a1f2a;
+  --el-bg-color-page: #151820;
+  --el-bg-color-overlay: #212836;
+
+  --el-border-color: #2d3341;
+  --el-border-color-light: #363d4d;
+  --el-border-color-lighter: #404857;
+  --el-border-color-extra-light: #2a3542;
+
+  --el-box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.36), 0 8px 20px rgba(0, 0, 0, 0.72);
+  --el-box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.72);
+  --el-box-shadow-lighter: 0 2px 4px 0 rgba(0, 0, 0, 0.36);
+  --el-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.72), 0 0 6px rgba(0, 0, 0, 0.36);
+  --el-box-shadow-dark: 0 0 12px rgba(0, 0, 0, 0.48);
+}
