@@ -12,5 +12,8 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
+    includedRoutes() {
+      return ['/', '/privacy-policy', '/terms-and-use']
+    },
   },
 })
