@@ -110,6 +110,60 @@
         </div>
       </div>
 
+      <!-- Third-Party Integrations -->
+      <div class="card terms-section">
+        <div class="card-header">
+          <Link :size="18" class="icon-primary" />
+          <span>Third-Party Integrations</span>
+        </div>
+        <div class="card-body section-content">
+          <h3>Overview</h3>
+          <p>The Service offers optional integrations with third-party platforms, including but not limited to Gmail (Google), GitHub, and social media services. These integrations are provided for your convenience and require your explicit authorization before any data is accessed or shared.</p>
+
+          <h3>Gmail Integration and Google API Services</h3>
+          <p>If you choose to connect your Gmail account, you authorize Molley to access specific Gmail API scopes solely to send emails and verify delivery on your behalf. By using this integration, you acknowledge that:</p>
+          <ul>
+            <li>Your use of the Gmail integration is subject to Google's <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
+            <li>Molley's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements</li>
+            <li>You may revoke access at any time through the Service or your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account Permissions</a></li>
+            <li>Full details of how Gmail data is handled are described in our Privacy Policy under the Gmail Integration section</li>
+          </ul>
+
+          <h3>Meta (Facebook &amp; Instagram) Integration</h3>
+          <p>If you choose to connect your Facebook or Instagram account, you authorize Molley to access specific Meta API permissions solely to publish content to your selected Pages or Instagram business accounts on your behalf. By using this integration, you acknowledge that:</p>
+          <ul>
+            <li>Your use of the Meta integration is subject to <a href="https://developers.facebook.com/terms/" target="_blank" rel="noopener noreferrer">Meta Platform Terms</a> and the <a href="https://developers.facebook.com/policy/" target="_blank" rel="noopener noreferrer">Meta Developer Policies</a></li>
+            <li>Molley only accesses Facebook Page and Instagram business data — we never access your personal profile, friends list, or private messages</li>
+            <li>You may revoke access at any time through the Service or your <a href="https://www.facebook.com/settings?tab=business_tools" target="_blank" rel="noopener noreferrer">Facebook Business Integrations</a> settings</li>
+            <li>You may request deletion of all Meta-related data by contacting support@molley.io</li>
+            <li>Full details of how Meta data is handled are described in our Privacy Policy under the Meta (Facebook &amp; Instagram) Integration section</li>
+          </ul>
+
+          <h3>X (formerly Twitter) Integration</h3>
+          <p>If you choose to connect your X account, you authorize Molley to access specific X API scopes solely to publish posts and verify delivery on your behalf. By using this integration, you acknowledge that:</p>
+          <ul>
+            <li>Your use of the X integration is subject to the <a href="https://developer.x.com/en/developer-terms/agreement-and-policy" target="_blank" rel="noopener noreferrer">X Developer Agreement and Policy</a></li>
+            <li>Molley only posts content you explicitly compose and approve — we do not access your direct messages, followers, or likes</li>
+            <li>You may revoke access at any time through the Service or your <a href="https://twitter.com/settings/connected_apps" target="_blank" rel="noopener noreferrer">X Connected Apps</a> settings</li>
+            <li>You may request deletion of all X-related data by contacting support@molley.io</li>
+            <li>Full details of how X data is handled are described in our Privacy Policy under the X (formerly Twitter) Integration section</li>
+          </ul>
+
+          <h3>LinkedIn Integration</h3>
+          <p>If you choose to connect your LinkedIn account, you authorize Molley to access specific LinkedIn API permissions solely to publish content to your LinkedIn profile or company page on your behalf. By using this integration, you acknowledge that:</p>
+          <ul>
+            <li>Your use of the LinkedIn integration is subject to the <a href="https://www.linkedin.com/legal/l/api-terms-of-use" target="_blank" rel="noopener noreferrer">LinkedIn API Terms of Use</a></li>
+            <li>Molley only publishes content you explicitly compose and approve — we do not access your messages, connections, or private profile data</li>
+            <li>You may revoke access at any time through the Service or your <a href="https://www.linkedin.com/psettings/permitted-services" target="_blank" rel="noopener noreferrer">LinkedIn Permitted Services</a> settings</li>
+            <li>You may request deletion of all LinkedIn-related data by contacting support@molley.io</li>
+            <li>Full details of how LinkedIn data is handled are described in our Privacy Policy under the LinkedIn Integration section</li>
+          </ul>
+
+          <h3>Your Responsibility</h3>
+          <p>You are responsible for your use of third-party services connected through Molley, including complying with those services' terms and policies. Molley is not responsible for the availability, accuracy, or practices of third-party services.</p>
+        </div>
+      </div>
+
       <!-- Privacy and Data Protection -->
       <div class="card terms-section">
         <div class="card-header">
@@ -261,7 +315,8 @@ import {
   Clock,
   AlertTriangle,
   X,
-  MessageSquare
+  MessageSquare,
+  Link
 } from 'lucide-vue-next'
 
 const formatDate = (date: Date): string => {

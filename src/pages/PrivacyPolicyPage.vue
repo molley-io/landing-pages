@@ -218,6 +218,244 @@
         </div>
       </div>
 
+      <!-- Gmail Integration -->
+      <div class="card policy-section">
+        <div class="card-header">
+          <Mail :size="18" class="icon-primary" />
+          <span>Gmail Integration</span>
+        </div>
+        <div class="card-body section-content">
+          <p>Molley offers an optional Gmail integration that allows you to send outreach emails directly from the platform. This section describes exactly how we handle your Google account data.</p>
+
+          <h3>What We Access</h3>
+          <p>When you connect your Gmail account, we request the following Google OAuth scopes:</p>
+          <ul>
+            <li><strong>gmail.send</strong> — Send emails on your behalf through the Molley platform</li>
+            <li><strong>gmail.compose</strong> — Create email drafts for your review before sending</li>
+            <li><strong>gmail.readonly</strong> — Read email metadata to confirm delivery status</li>
+            <li><strong>userinfo.email &amp; userinfo.profile</strong> — Identify which Google account is connected</li>
+          </ul>
+
+          <h3>How We Use Your Gmail Data</h3>
+          <p>Your Gmail data is used <strong>solely</strong> to:</p>
+          <ul>
+            <li>Send outreach emails you compose and approve within Molley</li>
+            <li>Display your connected email address in the integration settings</li>
+            <li>Verify delivery status of emails sent through the platform</li>
+          </ul>
+          <p>We <strong>do not</strong> use your Gmail data for advertising, market research, or any purpose unrelated to the functionality described above.</p>
+
+          <h3>How We Store Your Gmail Credentials</h3>
+          <ul>
+            <li><strong>OAuth tokens</strong> (access and refresh tokens) are encrypted at rest using AES-256-GCM before being stored in our database</li>
+            <li>We never store your Google password</li>
+            <li>Tokens are only decrypted server-side at the moment they are needed to make an API call on your behalf</li>
+          </ul>
+
+          <h3>What We Do NOT Do</h3>
+          <ul>
+            <li>We do not read, scan, or index the contents of your inbox</li>
+            <li>We do not share your Gmail data with any third party</li>
+            <li>We do not sell or use your Gmail data for advertising purposes</li>
+            <li>We do not retain email content after it has been sent</li>
+          </ul>
+
+          <h3>Revoking Gmail Access</h3>
+          <p>You can disconnect your Gmail account at any time by:</p>
+          <ul>
+            <li>Going to <strong>User Settings &gt; Integrations</strong> in Molley and clicking <strong>Disconnect</strong></li>
+            <li>Visiting your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account Permissions</a> page and removing Molley</li>
+          </ul>
+          <p>When you disconnect, we immediately delete your stored OAuth tokens. No Gmail data is retained after disconnection.</p>
+
+          <h3>Google API Services Compliance</h3>
+          <p>Molley's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+        </div>
+      </div>
+
+      <!-- Meta (Facebook & Instagram) Integration -->
+      <div class="card policy-section">
+        <div class="card-header">
+          <Share2 :size="18" class="icon-primary" />
+          <span>Meta (Facebook &amp; Instagram) Integration</span>
+        </div>
+        <div class="card-body section-content">
+          <p>Molley offers an optional integration with Meta platforms (Facebook and Instagram) that allows you to publish social media content directly from the platform. This section describes exactly how we handle your Meta account data.</p>
+
+          <h3>What We Access</h3>
+          <p>When you connect your Facebook or Instagram account, we request the following permissions:</p>
+          <ul>
+            <li><strong>pages_show_list</strong> — List the Facebook Pages you manage so you can select which page to publish to</li>
+            <li><strong>pages_read_engagement</strong> — Read basic engagement data on your posts to display publishing status</li>
+            <li><strong>pages_manage_posts</strong> — Create and publish posts to your selected Facebook Page on your behalf</li>
+            <li><strong>instagram_basic</strong> — Access basic Instagram account information linked to your Facebook Page</li>
+            <li><strong>instagram_content_publish</strong> — Publish content to your Instagram business account on your behalf</li>
+          </ul>
+
+          <h3>How We Use Your Meta Data</h3>
+          <p>Your Meta data is used <strong>solely</strong> to:</p>
+          <ul>
+            <li>Display a list of Facebook Pages and Instagram accounts you manage, so you can select where to publish</li>
+            <li>Publish social media posts you compose and approve within Molley to your selected pages or accounts</li>
+            <li>Display publishing status and confirmation of posted content</li>
+          </ul>
+          <p>We <strong>do not</strong> use your Meta data for advertising, profiling, market research, or any purpose unrelated to the functionality described above.</p>
+
+          <h3>How We Store Your Meta Credentials</h3>
+          <ul>
+            <li><strong>OAuth tokens</strong> (Page access tokens) are encrypted at rest using AES-256-GCM before being stored in our database</li>
+            <li>We never store your Facebook or Instagram password</li>
+            <li>Tokens are only decrypted server-side at the moment they are needed to make an API call on your behalf</li>
+          </ul>
+
+          <h3>What We Do NOT Do</h3>
+          <ul>
+            <li>We do not read, scan, or store your Facebook or Instagram private messages</li>
+            <li>We do not access your personal Facebook profile, friends list, or timeline</li>
+            <li>We do not sell, share, or transfer your Meta data to any third party</li>
+            <li>We do not use your Meta data for advertising or ad targeting purposes</li>
+            <li>We do not retain post content after it has been published</li>
+          </ul>
+
+          <h3>Revoking Meta Access</h3>
+          <p>You can disconnect your Facebook or Instagram account at any time by:</p>
+          <ul>
+            <li>Going to <strong>Settings &gt; Social Media</strong> in Molley and clicking <strong>Disconnect</strong></li>
+            <li>Visiting your <a href="https://www.facebook.com/settings?tab=business_tools" target="_blank" rel="noopener noreferrer">Facebook Business Integrations</a> settings and removing Molley</li>
+          </ul>
+          <p>When you disconnect, we immediately delete your stored access tokens and associated page data. No Meta data is retained after disconnection.</p>
+
+          <h3>Data Deletion</h3>
+          <p>You may request deletion of all Meta-related data we hold by contacting us at <strong>support@molley.io</strong>. Upon receiving a valid deletion request, we will:</p>
+          <ul>
+            <li>Delete all stored OAuth tokens associated with your Meta accounts</li>
+            <li>Remove all connected page and account metadata</li>
+            <li>Confirm deletion within 30 days</li>
+          </ul>
+          <p>You may also initiate deletion through Meta's platform by removing Molley from your <a href="https://www.facebook.com/settings?tab=business_tools" target="_blank" rel="noopener noreferrer">Facebook Business Integrations</a>.</p>
+
+          <h3>Meta Platform Terms Compliance</h3>
+          <p>Molley's use of data received from Meta APIs complies with the <a href="https://developers.facebook.com/terms/" target="_blank" rel="noopener noreferrer">Meta Platform Terms</a> and the <a href="https://developers.facebook.com/policy/" target="_blank" rel="noopener noreferrer">Meta Developer Policies</a>, including all data use restrictions and transparency requirements.</p>
+        </div>
+      </div>
+
+      <!-- X (Twitter) Integration -->
+      <div class="card policy-section">
+        <div class="card-header">
+          <Share2 :size="18" class="icon-primary" />
+          <span>X (formerly Twitter) Integration</span>
+        </div>
+        <div class="card-body section-content">
+          <p>Molley offers an optional integration with X (formerly Twitter) that allows you to publish posts directly from the platform. This section describes exactly how we handle your X account data.</p>
+
+          <h3>What We Access</h3>
+          <p>When you connect your X account, we request the following OAuth 2.0 scopes:</p>
+          <ul>
+            <li><strong>tweet.read</strong> — Read your tweets to confirm publishing status and avoid duplicate posts</li>
+            <li><strong>tweet.write</strong> — Post tweets on your behalf from content you compose and approve within Molley</li>
+            <li><strong>users.read</strong> — Read your basic profile information (username, display name) to identify the connected account</li>
+            <li><strong>offline.access</strong> — Maintain the connection without requiring you to re-authorize each session</li>
+          </ul>
+
+          <h3>How We Use Your X Data</h3>
+          <p>Your X data is used <strong>solely</strong> to:</p>
+          <ul>
+            <li>Display your connected X account in the integration settings</li>
+            <li>Publish posts you compose and approve within Molley to your X account</li>
+            <li>Verify that posts were published successfully</li>
+          </ul>
+          <p>We <strong>do not</strong> use your X data for advertising, analytics resale, profiling, or any purpose unrelated to the functionality described above.</p>
+
+          <h3>How We Store Your X Credentials</h3>
+          <ul>
+            <li><strong>OAuth tokens</strong> (access and refresh tokens) are encrypted at rest using AES-256-GCM before being stored in our database</li>
+            <li>We never store your X password</li>
+            <li>Tokens are only decrypted server-side at the moment they are needed to make an API call on your behalf</li>
+          </ul>
+
+          <h3>What We Do NOT Do</h3>
+          <ul>
+            <li>We do not read, store, or analyse your direct messages</li>
+            <li>We do not access your followers list, likes, or bookmarks</li>
+            <li>We do not sell, share, or transfer your X data to any third party</li>
+            <li>We do not use your X data for advertising or ad targeting purposes</li>
+            <li>We do not retain post content after it has been published</li>
+          </ul>
+
+          <h3>Revoking X Access</h3>
+          <p>You can disconnect your X account at any time by:</p>
+          <ul>
+            <li>Going to <strong>Settings &gt; Social Media</strong> in Molley and clicking <strong>Disconnect</strong></li>
+            <li>Visiting your <a href="https://twitter.com/settings/connected_apps" target="_blank" rel="noopener noreferrer">X Connected Apps</a> settings and revoking Molley's access</li>
+          </ul>
+          <p>When you disconnect, we immediately delete your stored OAuth tokens. No X data is retained after disconnection.</p>
+
+          <h3>Data Deletion</h3>
+          <p>You may request deletion of all X-related data we hold by contacting us at <strong>support@molley.io</strong>. Upon receiving a valid request, we will delete all stored tokens and associated account metadata and confirm deletion within 30 days.</p>
+
+          <h3>X Developer Agreement Compliance</h3>
+          <p>Molley's use of data received from X APIs complies with the <a href="https://developer.x.com/en/developer-terms/agreement-and-policy" target="_blank" rel="noopener noreferrer">X Developer Agreement and Policy</a>, including all restrictions on data usage, storage, and display.</p>
+        </div>
+      </div>
+
+      <!-- LinkedIn Integration -->
+      <div class="card policy-section">
+        <div class="card-header">
+          <Share2 :size="18" class="icon-primary" />
+          <span>LinkedIn Integration</span>
+        </div>
+        <div class="card-body section-content">
+          <p>Molley offers an optional integration with LinkedIn that allows you to publish professional content directly from the platform. This section describes exactly how we handle your LinkedIn account data.</p>
+
+          <h3>What We Access</h3>
+          <p>When you connect your LinkedIn account, we request the following permissions:</p>
+          <ul>
+            <li><strong>openid &amp; profile</strong> — Read your basic profile information (name, profile picture) to identify the connected account</li>
+            <li><strong>email</strong> — Read your email address to display which LinkedIn account is connected</li>
+            <li><strong>w_member_social</strong> — Create and publish posts to your LinkedIn profile or company page on your behalf</li>
+          </ul>
+
+          <h3>How We Use Your LinkedIn Data</h3>
+          <p>Your LinkedIn data is used <strong>solely</strong> to:</p>
+          <ul>
+            <li>Display your connected LinkedIn account in the integration settings</li>
+            <li>Publish professional content you compose and approve within Molley to your LinkedIn profile or company page</li>
+            <li>Verify that posts were published successfully</li>
+          </ul>
+          <p>We <strong>do not</strong> use your LinkedIn data for recruiting, advertising, profiling, or any purpose unrelated to the functionality described above.</p>
+
+          <h3>How We Store Your LinkedIn Credentials</h3>
+          <ul>
+            <li><strong>OAuth tokens</strong> (access and refresh tokens) are encrypted at rest using AES-256-GCM before being stored in our database</li>
+            <li>We never store your LinkedIn password</li>
+            <li>Tokens are only decrypted server-side at the moment they are needed to make an API call on your behalf</li>
+          </ul>
+
+          <h3>What We Do NOT Do</h3>
+          <ul>
+            <li>We do not read, store, or access your LinkedIn messages or connections</li>
+            <li>We do not scrape your profile or your connections' profiles</li>
+            <li>We do not sell, share, or transfer your LinkedIn data to any third party</li>
+            <li>We do not use your LinkedIn data for advertising, recruiting, or profiling purposes</li>
+            <li>We do not retain post content after it has been published</li>
+          </ul>
+
+          <h3>Revoking LinkedIn Access</h3>
+          <p>You can disconnect your LinkedIn account at any time by:</p>
+          <ul>
+            <li>Going to <strong>Settings &gt; Social Media</strong> in Molley and clicking <strong>Disconnect</strong></li>
+            <li>Visiting your <a href="https://www.linkedin.com/psettings/permitted-services" target="_blank" rel="noopener noreferrer">LinkedIn Permitted Services</a> settings and removing Molley</li>
+          </ul>
+          <p>When you disconnect, we immediately delete your stored OAuth tokens. No LinkedIn data is retained after disconnection.</p>
+
+          <h3>Data Deletion</h3>
+          <p>You may request deletion of all LinkedIn-related data we hold by contacting us at <strong>support@molley.io</strong>. Upon receiving a valid request, we will delete all stored tokens and associated account metadata and confirm deletion within 30 days.</p>
+
+          <h3>LinkedIn API Terms Compliance</h3>
+          <p>Molley's use of data received from LinkedIn APIs complies with the <a href="https://www.linkedin.com/legal/l/api-terms-of-use" target="_blank" rel="noopener noreferrer">LinkedIn API Terms of Use</a> and the <a href="https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/best-practices" target="_blank" rel="noopener noreferrer">LinkedIn API Best Practices</a>, including all restrictions on data usage, storage, and member privacy.</p>
+        </div>
+      </div>
+
       <!-- International Transfers -->
       <div class="card policy-section">
         <div class="card-header">
@@ -288,7 +526,8 @@ import {
   Download,
   Mail,
   CheckCircle,
-  Info
+  Info,
+  Share2
 } from 'lucide-vue-next'
 
 const formatDate = (date: Date): string => {
