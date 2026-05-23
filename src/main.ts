@@ -13,6 +13,7 @@ export const createApp = ViteSSG(App, { routes }, async ({ app, router, isClient
       router: router,
       enableLinkTracking: true,
       trackInitialView: true,
+      requireConsent: true,
     })
   }
 })

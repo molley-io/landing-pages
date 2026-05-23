@@ -17,6 +17,10 @@ interface ImportMeta {
   readonly env: ImportMetaEnv
 }
 
+interface Window {
+  _paq?: unknown[][]
+}
+
 declare module 'vue-matomo' {
   import { Plugin } from 'vue'
   import { Router } from 'vue-router'

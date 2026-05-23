@@ -32,12 +32,34 @@
             </div>
             <div class="card-content">
               <div class="chat-bubble user">
-                "Write release notes for the new dashboard feature"
+                "Analyse our user research and suggest what to build next"
               </div>
               <div class="chat-bubble ai">
-                "Based on your feature spec and target audience (SMB founders), here's a draft that highlights the time-saving benefits..."
+                "Based on 23 feedback entries and your roadmap, I'd prioritise the dashboard redesign — 68% of users mentioned it. I've drafted a feature spec. Want me to add it to your backlog?"
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Strip -->
+    <section class="social-proof-strip">
+      <div class="section-content">
+        <div class="proof-items">
+          <div class="proof-item">
+            <span class="proof-number">15+</span>
+            <span class="proof-label">Years building products</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-number">9</span>
+            <span class="proof-label">Tools replaced</span>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="proof-item">
+            <span class="proof-number">1</span>
+            <span class="proof-label">Connected platform</span>
           </div>
         </div>
       </div>
@@ -71,6 +93,12 @@
               Your research doesn't inform your features. Your features don't connect to your marketing. Everything lives in silos.
             </p>
           </div>
+        </div>
+        <div class="section-cta">
+          <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large">
+            Break Free From Tool Chaos
+            <ArrowRight :size="18" />
+          </a>
         </div>
       </div>
     </section>
@@ -110,21 +138,21 @@
           </div>
           <div class="features-grid">
             <div class="feature-card">
-              <h4 class="feature-title">Research Pages</h4>
+              <h4 class="feature-title">Research Notebooks</h4>
               <p class="feature-description">
-                Notion-style pages for capturing insights, interviews, and market research.
+                Rich documents with AI-powered synthesis. Highlight key findings and let Molley summarize patterns across all your research.
               </p>
             </div>
             <div class="feature-card">
-              <h4 class="feature-title">Knowledge Notebooks</h4>
+              <h4 class="feature-title">URL Import &amp; Analysis</h4>
               <p class="feature-description">
-                Organized document libraries that AI can reference when you need answers.
+                Drop in any URL — competitor pages, articles, docs — and AI extracts, summarizes, and indexes the content for you.
               </p>
             </div>
             <div class="feature-card">
-              <h4 class="feature-title">Data Synthesis</h4>
+              <h4 class="feature-title">Cross-Reference Insights</h4>
               <p class="feature-description">
-                AI-powered analysis that turns raw research into actionable insights.
+                Ask questions across all your research. Molley cross-references notes, imports, and data to surface insights you'd miss.
               </p>
             </div>
           </div>
@@ -137,21 +165,21 @@
           </div>
           <div class="features-grid">
             <div class="feature-card">
-              <h4 class="feature-title">Product Pages</h4>
+              <h4 class="feature-title">AI Product Strategy</h4>
               <p class="feature-description">
-                Living documentation that stays in sync with your product evolution.
+                Describe your product and Molley generates strategy docs, competitive positioning, and go-to-market recommendations.
               </p>
             </div>
             <div class="feature-card">
-              <h4 class="feature-title">Feature Kanban</h4>
+              <h4 class="feature-title">Smart Feature Board</h4>
               <p class="feature-description">
-                Visual workflow from idea to shipped, with requirements and bugs attached.
+                AI creates feature specs from conversations. Drag through your workflow — idea, spec, in progress, shipped — with linked requirements and bugs.
               </p>
             </div>
             <div class="feature-card">
-              <h4 class="feature-title">Feedback Forms</h4>
+              <h4 class="feature-title">Customer Feedback</h4>
               <p class="feature-description">
-                NPS, CSAT, and custom forms. Embed anywhere, track in real-time.
+                Embed NPS, CSAT, and custom forms anywhere. AI analyses responses and links insights directly to your feature roadmap.
               </p>
             </div>
           </div>
@@ -164,24 +192,37 @@
           </div>
           <div class="features-grid">
             <div class="feature-card">
-              <h4 class="feature-title">Social Outreach</h4>
+              <h4 class="feature-title">AI Content Studio</h4>
               <p class="feature-description">
-                Plan and generate content for multiple platforms with AI that knows your voice.
+                Generate platform-specific posts, threads, and campaigns. Molley knows your product and writes content that sounds like you, not a robot.
               </p>
             </div>
             <div class="feature-card">
-              <h4 class="feature-title">CRM</h4>
+              <h4 class="feature-title">Pipeline CRM</h4>
               <p class="feature-description">
-                Track leads, customers, and relationships without switching apps.
+                Track opportunities from lead to close with weighted pipeline analytics. AI enriches contacts and suggests next actions.
               </p>
             </div>
             <div class="feature-card">
-              <h4 class="feature-title">Marketing Plans</h4>
+              <h4 class="feature-title">Growth Playbooks</h4>
               <p class="feature-description">
-                Strategy docs that connect to your product roadmap and customer data.
+                AI-generated go-to-market strategies that pull from your product data, customer feedback, and competitive research.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mid-page CTA -->
+    <section class="mid-cta-section">
+      <div class="section-content">
+        <div class="section-cta">
+          <p class="mid-cta-text">All of this, in one workspace. No more tab switching.</p>
+          <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large">
+            Try It Free
+            <ArrowRight :size="18" />
+          </a>
         </div>
       </div>
     </section>
@@ -237,6 +278,68 @@
       </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+      <div class="section-content">
+        <div class="section-header">
+          <h2 class="section-title">Simple, Transparent Pricing</h2>
+          <p class="section-description">Start free. Upgrade when you're ready. No surprises.</p>
+        </div>
+        <div class="pricing-grid pricing-grid--two">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Solo</h3>
+              <div class="pricing-price">
+                <span class="price-currency">&pound;</span>
+                <span class="price-amount">5</span>
+                <span class="price-period">/month</span>
+              </div>
+              <p class="pricing-annual">or &pound;48/year (save 20%)</p>
+              <p class="pricing-description">For individual founders and makers</p>
+            </div>
+            <ul class="pricing-features">
+              <li><Check :size="16" class="check-icon" /> Unlimited projects</li>
+              <li><Check :size="16" class="check-icon" /> Research &amp; product notebooks</li>
+              <li><Check :size="16" class="check-icon" /> AI assistant &amp; agentic mode</li>
+              <li><Check :size="16" class="check-icon" /> Feature management &amp; Kanban</li>
+              <li><Check :size="16" class="check-icon" /> Feedback forms (NPS, CSAT)</li>
+              <li><Check :size="16" class="check-icon" /> CRM &amp; pipeline analytics</li>
+              <li><Check :size="16" class="check-icon" /> Social outreach tools</li>
+              <li><Check :size="16" class="check-icon" /> Data synthesis &amp; insights</li>
+            </ul>
+            <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large pricing-cta">
+              Get Started
+            </a>
+          </div>
+          <div class="pricing-card pricing-card--featured">
+            <div class="pricing-badge">For Teams</div>
+            <div class="pricing-header">
+              <h3 class="pricing-name">Company</h3>
+              <div class="pricing-price">
+                <span class="price-currency">&pound;</span>
+                <span class="price-amount">10</span>
+                <span class="price-period">/seat/month</span>
+              </div>
+              <p class="pricing-annual">or &pound;100/seat/year (save 20%)</p>
+              <p class="pricing-description">For teams building products together</p>
+            </div>
+            <ul class="pricing-features">
+              <li><Check :size="16" class="check-icon" /> Everything in Solo</li>
+              <li><Check :size="16" class="check-icon" /> Team collaboration</li>
+              <li><Check :size="16" class="check-icon" /> Role-based permissions</li>
+              <li><Check :size="16" class="check-icon" /> Shared workspaces</li>
+              <li><Check :size="16" class="check-icon" /> Team AI context</li>
+              <li><Check :size="16" class="check-icon" /> Priority support</li>
+            </ul>
+            <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large pricing-cta">
+              Get Started
+            </a>
+          </div>
+        </div>
+        <p class="pricing-note">No credit card required to get started &bull; Need more AI? Buy additional Molley AI credits anytime</p>
+      </div>
+    </section>
+
     <!-- Who It's For Section -->
     <section class="audience-section">
       <div class="section-content">
@@ -269,6 +372,31 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="section-content">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <div
+            v-for="(faq, index) in faqs"
+            :key="index"
+            class="faq-item"
+            :class="{ 'faq-item--open': faq.open }"
+          >
+            <button class="faq-question" @click="faq.open = !faq.open">
+              <span>{{ faq.question }}</span>
+              <ChevronDown :size="20" class="faq-chevron" />
+            </button>
+            <div v-if="faq.open" class="faq-answer">
+              <p>{{ faq.answer }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="section-content">
@@ -291,9 +419,12 @@
 </template>
 
 <script setup lang="ts">
+import { reactive } from 'vue'
 import {
   ArrowRight,
   Bot,
+  Check,
+  ChevronDown,
   Layers,
   Brain,
   Unplug,
@@ -314,6 +445,39 @@ const scrollToProblem = () => {
     element.scrollIntoView({ behavior: 'smooth' })
   }
 }
+
+const faqs = reactive([
+  {
+    question: 'What does "AI that knows your business" actually mean?',
+    answer: 'When you create your company and projects in Molley, the AI automatically understands your context — your product, features, research, and customers. When you ask it to write docs, analyse feedback, or brainstorm ideas, it already has the background. No copy-pasting context into ChatGPT.',
+    open: false,
+  },
+  {
+    question: 'Is my data secure?',
+    answer: 'Yes. Your data is encrypted at rest and in transit. We never sell or share your data with third parties. Molley is registered in England (Company No. 17143035) and complies with UK GDPR. Payments are processed securely by Stripe.',
+    open: false,
+  },
+  {
+    question: 'Can I import from Notion, Jira, or other tools?',
+    answer: 'You can import content via URL — drop in any link and Molley AI will extract and index the content. Direct integrations with Notion, Jira, and other tools are on our roadmap.',
+    open: false,
+  },
+  {
+    question: 'What\'s included in the Solo plan?',
+    answer: 'The Solo plan at \u00a35/month gives you unlimited projects with full access to research notebooks, product pages, feature management, AI assistant with agentic mode, CRM, feedback forms, social outreach, and data synthesis. Save 20% with annual billing at \u00a348/year.',
+    open: false,
+  },
+  {
+    question: 'How does billing work?',
+    answer: 'Sign up and explore Molley with no credit card required. When you\'re ready, choose Solo (\u00a35/mo) for individual use or Company (\u00a310/seat/mo) for team collaboration. Both plans offer 20% off with annual billing.',
+    open: false,
+  },
+  {
+    question: 'What happens to my data if I downgrade?',
+    answer: 'Your data is never deleted. If you cancel, you keep read access to everything. You can resubscribe anytime to regain full editing capabilities.',
+    open: false,
+  },
+])
 </script>
 
 <style lang="scss" scoped>
@@ -758,6 +922,267 @@ const scrollToProblem = () => {
       }
     }
   }
+
+  .social-proof-strip {
+    padding: 32px 20px;
+    background: var(--el-bg-color);
+    border-bottom: 1px solid var(--el-border-color-lighter);
+
+    .proof-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .proof-item {
+      text-align: center;
+    }
+
+    .proof-number {
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--el-color-primary);
+      line-height: 1;
+    }
+
+    .proof-label {
+      display: block;
+      font-size: var(--el-font-size-small);
+      color: var(--el-text-color-secondary);
+      margin-top: 4px;
+    }
+
+    .proof-divider {
+      width: 1px;
+      height: 40px;
+      background: var(--el-border-color-lighter);
+    }
+  }
+
+  .section-cta {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .mid-cta-section {
+    padding: 48px 20px;
+    background: var(--el-bg-color);
+    text-align: center;
+
+    .section-cta {
+      margin-top: 0;
+    }
+
+    .mid-cta-text {
+      font-size: var(--el-font-size-large);
+      color: var(--el-text-color-regular);
+      margin: 0 0 24px 0;
+    }
+  }
+
+  .pricing-section {
+    padding: 80px 20px;
+    background: var(--el-bg-color);
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+
+      &--two {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+      }
+    }
+
+    .pricing-card {
+      background: var(--el-bg-color);
+      border: 1px solid var(--el-border-color-lighter);
+      border-radius: var(--el-border-radius-base);
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all var(--el-transition-duration);
+
+      &:hover {
+        box-shadow: var(--el-box-shadow-light);
+        transform: translateY(-2px);
+      }
+
+      &--featured {
+        border-color: var(--el-color-primary);
+        box-shadow: var(--el-box-shadow-light);
+      }
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--el-color-primary);
+      color: #fff;
+      font-size: var(--el-font-size-extra-small);
+      font-weight: 600;
+      padding: 4px 16px;
+      border-radius: var(--el-border-radius-round);
+      white-space: nowrap;
+    }
+
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .pricing-name {
+      font-size: var(--el-font-size-large);
+      font-weight: 600;
+      color: var(--el-text-color-primary);
+      margin: 0 0 12px 0;
+    }
+
+    .pricing-price {
+      margin-bottom: 8px;
+    }
+
+    .price-currency {
+      font-size: var(--el-font-size-large);
+      font-weight: 600;
+      color: var(--el-text-color-primary);
+      vertical-align: top;
+    }
+
+    .price-amount {
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--el-text-color-primary);
+      line-height: 1;
+    }
+
+    .price-period {
+      font-size: var(--el-font-size-base);
+      color: var(--el-text-color-secondary);
+    }
+
+    .pricing-annual {
+      font-size: var(--el-font-size-small);
+      color: var(--el-color-success);
+      font-weight: 500;
+      margin: 4px 0 8px 0;
+    }
+
+    .pricing-description {
+      font-size: var(--el-font-size-base);
+      color: var(--el-text-color-secondary);
+      margin: 0;
+    }
+
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px 0;
+      flex: 1;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 0;
+        font-size: var(--el-font-size-base);
+        color: var(--el-text-color-regular);
+        border-bottom: 1px solid var(--el-border-color-extra-light);
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .check-icon {
+          color: var(--el-color-success);
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    .pricing-cta {
+      width: 100%;
+    }
+
+    .pricing-note {
+      text-align: center;
+      font-size: var(--el-font-size-small);
+      color: var(--el-text-color-secondary);
+      margin: 32px 0 0 0;
+    }
+  }
+
+  .faq-section {
+    padding: 80px 20px;
+    background: var(--el-bg-color-page);
+
+    .section-content {
+      max-width: 800px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: var(--el-bg-color);
+      border: 1px solid var(--el-border-color-lighter);
+      border-radius: var(--el-border-radius-base);
+      overflow: hidden;
+      transition: border-color var(--el-transition-duration);
+
+      &--open {
+        border-color: var(--el-color-primary-light-7);
+      }
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+      font-size: var(--el-font-size-medium);
+      font-weight: 500;
+      color: var(--el-text-color-primary);
+      gap: 16px;
+
+      .faq-chevron {
+        transition: transform var(--el-transition-duration);
+        color: var(--el-text-color-secondary);
+        flex-shrink: 0;
+      }
+    }
+
+    .faq-item--open .faq-question .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 20px 16px;
+
+      p {
+        margin: 0;
+        font-size: var(--el-font-size-base);
+        color: var(--el-text-color-regular);
+        line-height: 1.6;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -770,6 +1195,16 @@ const scrollToProblem = () => {
 
     .how-it-works-section .steps-container {
       grid-template-columns: 1fr;
+    }
+
+    .pricing-section .pricing-grid {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      margin: 0 auto;
+
+      &--two {
+        max-width: 400px;
+      }
     }
   }
 }
@@ -816,8 +1251,18 @@ const scrollToProblem = () => {
     .features-section,
     .how-it-works-section,
     .audience-section,
+    .pricing-section,
+    .faq-section,
     .cta-section {
       padding: 60px 20px;
+    }
+
+    .mid-cta-section {
+      padding: 40px 20px;
+    }
+
+    .social-proof-strip .proof-items {
+      gap: 24px;
     }
 
     .solution-section .solution-highlight .highlight-card {
@@ -857,8 +1302,26 @@ const scrollToProblem = () => {
     .features-section,
     .how-it-works-section,
     .audience-section,
+    .pricing-section,
+    .faq-section,
     .cta-section {
       padding: 40px 15px;
+    }
+
+    .mid-cta-section {
+      padding: 32px 15px;
+    }
+
+    .social-proof-strip {
+      .proof-items {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .proof-divider {
+        width: 40px;
+        height: 1px;
+      }
     }
   }
 }
