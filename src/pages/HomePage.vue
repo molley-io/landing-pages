@@ -14,7 +14,7 @@
           </p>
           <div class="hero-actions">
             <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large cta-primary">
-              Start Free
+              Request Invite
               <ArrowRight :size="18" />
             </a>
             <a href="#problem" class="btn btn--default btn--large cta-secondary" @click.prevent="scrollToProblem">
@@ -220,7 +220,7 @@
         <div class="section-cta">
           <p class="mid-cta-text">All of this, in one workspace. No more tab switching.</p>
           <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large">
-            Try It Free
+            Request Invite
             <ArrowRight :size="18" />
           </a>
         </div>
@@ -282,61 +282,52 @@
     <section class="pricing-section" id="pricing">
       <div class="section-content">
         <div class="section-header">
-          <h2 class="section-title">Simple, Transparent Pricing</h2>
-          <p class="section-description">Start free. Upgrade when you're ready. No surprises.</p>
+          <h2 class="section-title">Pricing</h2>
+          <p class="section-description">Currently in private invite-only access.</p>
         </div>
-        <div class="pricing-grid pricing-grid--two">
-          <div class="pricing-card">
-            <div class="pricing-header">
-              <h3 class="pricing-name">Solo</h3>
-              <div class="pricing-price">
-                <span class="price-currency">&pound;</span>
-                <span class="price-amount">5</span>
-                <span class="price-period">/month</span>
+        <div class="pricing-coming-soon">
+          <div class="pricing-blur-cards">
+            <div class="pricing-card pricing-card--blurred">
+              <div class="pricing-header">
+                <h3 class="pricing-name">Solo</h3>
+                <div class="pricing-price">
+                  <span class="price-amount">&pound;&bull;&bull;</span>
+                  <span class="price-period">/month</span>
+                </div>
+                <p class="pricing-description">For individual founders</p>
               </div>
-              <p class="pricing-annual">or &pound;48/year (save 20%)</p>
-              <p class="pricing-description">For individual founders and makers</p>
+              <ul class="pricing-features">
+                <li><Check :size="16" class="check-icon" /> Unlimited projects</li>
+                <li><Check :size="16" class="check-icon" /> Full AI assistant</li>
+                <li><Check :size="16" class="check-icon" /> All features included</li>
+                <li><Check :size="16" class="check-icon" /> Buy extra AI credits</li>
+              </ul>
             </div>
-            <ul class="pricing-features">
-              <li><Check :size="16" class="check-icon" /> Unlimited projects</li>
-              <li><Check :size="16" class="check-icon" /> Research &amp; product notebooks</li>
-              <li><Check :size="16" class="check-icon" /> AI assistant &amp; agentic mode</li>
-              <li><Check :size="16" class="check-icon" /> Feature management &amp; Kanban</li>
-              <li><Check :size="16" class="check-icon" /> Feedback forms (NPS, CSAT)</li>
-              <li><Check :size="16" class="check-icon" /> CRM &amp; pipeline analytics</li>
-              <li><Check :size="16" class="check-icon" /> Social outreach tools</li>
-              <li><Check :size="16" class="check-icon" /> Data synthesis &amp; insights</li>
-            </ul>
-            <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large pricing-cta">
-              Get Started
-            </a>
+            <div class="pricing-card pricing-card--blurred">
+              <div class="pricing-header">
+                <h3 class="pricing-name">Company</h3>
+                <div class="pricing-price">
+                  <span class="price-amount">&pound;&bull;&bull;</span>
+                  <span class="price-period">/seat/month</span>
+                </div>
+                <p class="pricing-description">For teams collaborating</p>
+              </div>
+              <ul class="pricing-features">
+                <li><Check :size="16" class="check-icon" /> Everything in Solo</li>
+                <li><Check :size="16" class="check-icon" /> Team collaboration</li>
+                <li><Check :size="16" class="check-icon" /> Shared workspaces</li>
+                <li><Check :size="16" class="check-icon" /> Buy extra AI credits</li>
+              </ul>
+            </div>
           </div>
-          <div class="pricing-card pricing-card--featured">
-            <div class="pricing-badge">For Teams</div>
-            <div class="pricing-header">
-              <h3 class="pricing-name">Company</h3>
-              <div class="pricing-price">
-                <span class="price-currency">&pound;</span>
-                <span class="price-amount">10</span>
-                <span class="price-period">/seat/month</span>
-              </div>
-              <p class="pricing-annual">or &pound;100/seat/year (save 20%)</p>
-              <p class="pricing-description">For teams building products together</p>
-            </div>
-            <ul class="pricing-features">
-              <li><Check :size="16" class="check-icon" /> Everything in Solo</li>
-              <li><Check :size="16" class="check-icon" /> Team collaboration</li>
-              <li><Check :size="16" class="check-icon" /> Role-based permissions</li>
-              <li><Check :size="16" class="check-icon" /> Shared workspaces</li>
-              <li><Check :size="16" class="check-icon" /> Team AI context</li>
-              <li><Check :size="16" class="check-icon" /> Priority support</li>
-            </ul>
-            <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large pricing-cta">
-              Get Started
+          <div class="pricing-overlay">
+            <span class="coming-soon-badge">Coming Soon</span>
+            <p class="coming-soon-text">Pricing will be announced when we open to the public.<br />Early members get exclusive rates.</p>
+            <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large">
+              Request Invite
             </a>
           </div>
         </div>
-        <p class="pricing-note">No credit card required to get started &bull; Need more AI? Buy additional Molley AI credits anytime</p>
       </div>
     </section>
 
@@ -407,11 +398,11 @@
           </p>
           <div class="cta-actions">
             <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large cta-primary">
-              Start Free Today
+              Request Invite
               <ArrowRight :size="18" />
             </a>
           </div>
-          <p class="cta-note">No credit card required &bull; Set up in 5 minutes</p>
+          <p class="cta-note">Private invite-only access &bull; Early members get exclusive rates</p>
         </div>
       </div>
     </section>
@@ -463,13 +454,13 @@ const faqs = reactive([
     open: false,
   },
   {
-    question: 'What\'s included in the Solo plan?',
-    answer: 'The Solo plan at \u00a35/month gives you unlimited projects with full access to research notebooks, product pages, feature management, AI assistant with agentic mode, CRM, feedback forms, social outreach, and data synthesis. Save 20% with annual billing at \u00a348/year.',
+    question: 'What do I get access to?',
+    answer: 'Every member gets unlimited projects with full access to research notebooks, product pages, feature management, AI assistant with agentic mode, CRM, feedback forms, social outreach, and data synthesis. You can also purchase additional Molley AI credits if you need more.',
     open: false,
   },
   {
-    question: 'How does billing work?',
-    answer: 'Sign up and explore Molley with no credit card required. When you\'re ready, choose Solo (\u00a35/mo) for individual use or Company (\u00a310/seat/mo) for team collaboration. Both plans offer 20% off with annual billing.',
+    question: 'How do I get access?',
+    answer: 'Molley is currently invite-only. Request an invite and we\'ll get you set up. Early members will receive exclusive pricing when we launch publicly.',
     open: false,
   },
   {
@@ -986,17 +977,57 @@ const faqs = reactive([
     padding: 80px 20px;
     background: var(--el-bg-color);
 
+    .pricing-coming-soon {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .pricing-blur-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      filter: blur(3px);
+      opacity: 0.5;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .pricing-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      z-index: 1;
+    }
+
+    .coming-soon-badge {
+      display: inline-block;
+      background: var(--el-color-primary);
+      color: #fff;
+      font-size: var(--el-font-size-medium);
+      font-weight: 600;
+      padding: 8px 24px;
+      border-radius: var(--el-border-radius-round);
+    }
+
+    .coming-soon-text {
+      font-size: var(--el-font-size-base);
+      color: var(--el-text-color-regular);
+      text-align: center;
+      margin: 0;
+      line-height: 1.6;
+    }
+
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       max-width: 1000px;
       margin: 0 auto;
-
-      &--two {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 700px;
-      }
     }
 
     .pricing-card {
@@ -1067,13 +1098,6 @@ const faqs = reactive([
     .price-period {
       font-size: var(--el-font-size-base);
       color: var(--el-text-color-secondary);
-    }
-
-    .pricing-annual {
-      font-size: var(--el-font-size-small);
-      color: var(--el-color-success);
-      font-weight: 500;
-      margin: 4px 0 8px 0;
     }
 
     .pricing-description {
@@ -1197,14 +1221,8 @@ const faqs = reactive([
       grid-template-columns: 1fr;
     }
 
-    .pricing-section .pricing-grid {
+    .pricing-section .pricing-blur-cards {
       grid-template-columns: 1fr;
-      max-width: 400px;
-      margin: 0 auto;
-
-      &--two {
-        max-width: 400px;
-      }
     }
   }
 }
