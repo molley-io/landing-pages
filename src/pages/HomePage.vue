@@ -13,7 +13,7 @@
             Molley replaces your scattered stack of Notion, Jira, Confluence, and CRM with one connected workspace — powered by AI that actually knows your business.
           </p>
           <div class="hero-actions">
-            <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large cta-primary">
+            <a href="mailto:support@molley.io" class="btn btn--primary btn--large cta-primary">
               Request Invite
               <ArrowRight :size="18" />
             </a>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="section-cta">
-          <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large">
+          <a href="mailto:support@molley.io" class="btn btn--primary btn--large">
             Break Free From Tool Chaos
             <ArrowRight :size="18" />
           </a>
@@ -219,7 +219,7 @@
       <div class="section-content">
         <div class="section-cta">
           <p class="mid-cta-text">All of this, in one workspace. No more tab switching.</p>
-          <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large">
+          <a href="mailto:support@molley.io" class="btn btn--primary btn--large">
             Request Invite
             <ArrowRight :size="18" />
           </a>
@@ -323,7 +323,7 @@
           <div class="pricing-overlay">
             <span class="coming-soon-badge">Coming Soon</span>
             <p class="coming-soon-text">Pricing will be announced when we open to the public.<br />Early members get exclusive rates.</p>
-            <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large">
+            <a href="mailto:support@molley.io" class="btn btn--primary btn--large">
               Request Invite
             </a>
           </div>
@@ -397,7 +397,7 @@
             Join builders who replaced their tool chaos with one connected platform.
           </p>
           <div class="cta-actions">
-            <a :href="`${appUrl}/auth/register`" class="btn btn--primary btn--large cta-primary">
+            <a href="mailto:support@molley.io" class="btn btn--primary btn--large cta-primary">
               Request Invite
               <ArrowRight :size="18" />
             </a>
@@ -427,8 +427,6 @@ import {
   Rocket,
   Target
 } from 'lucide-vue-next'
-
-const appUrl = import.meta.env.VITE_APP_URL || ''
 
 const scrollToProblem = () => {
   const element = document.getElementById('problem')

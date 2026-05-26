@@ -12,7 +12,7 @@
           <a href="/#pricing" class="nav-link" @click.prevent="navigateTo('#pricing')">Pricing</a>
           <a href="/#faq" class="nav-link" @click.prevent="navigateTo('#faq')">FAQ</a>
           <a :href="`${appUrl}/auth/login`" class="nav-link nav-link--mobile">Sign In</a>
-          <a :href="`${appUrl}/auth/register`" class="btn btn--primary nav-link--mobile">Request Invite</a>
+          <a href="mailto:support@molley.io" class="btn btn--primary nav-link--mobile">Request Invite</a>
         </nav>
         <div class="header-right">
           <button class="theme-toggle" @click="toggleTheme" :title="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'">
@@ -20,7 +20,7 @@
             <Moon v-else :size="18" />
           </button>
           <a :href="`${appUrl}/auth/login`" class="header-link">Sign In</a>
-          <a :href="`${appUrl}/auth/register`" class="btn btn--primary">Request Invite</a>
+          <a href="mailto:support@molley.io" class="btn btn--primary">Request Invite</a>
           <button class="mobile-menu-toggle" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle menu">
             <Menu v-if="!mobileMenuOpen" :size="22" />
             <X v-else :size="22" />

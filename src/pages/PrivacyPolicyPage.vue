@@ -410,8 +410,7 @@
           <h3>What We Access</h3>
           <p>When you connect your LinkedIn account, we request the following permissions:</p>
           <ul>
-            <li><strong>openid &amp; profile</strong> — Read your basic profile information (name, profile picture) to identify the connected account</li>
-            <li><strong>email</strong> — Read your email address to display which LinkedIn account is connected</li>
+            <li><strong>openid &amp; profile</strong> — Read your basic profile information (name, member ID) to identify the connected account</li>
             <li><strong>w_member_social</strong> — Create and publish posts to your LinkedIn profile or company page on your behalf</li>
           </ul>
 
