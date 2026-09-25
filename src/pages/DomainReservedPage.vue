@@ -8,14 +8,11 @@
         There is no content available here at this time.
       </p>
     </div>
-    <p class="reserved__footer">&copy; {{ currentYear }} Molley Ltd. All rights reserved.</p>
   </main>
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
-
-const currentYear = computed(() => new Date().getFullYear())
+import { onMounted } from 'vue'
 
 // Follow the visitor's system colour scheme (the site palette keys off data-theme).
 onMounted(() => {
@@ -73,11 +70,6 @@ onMounted(() => {
     color: var(--el-text-color-regular);
   }
 
-  &__footer {
-    margin: 28px 0 0;
-    font-size: var(--el-font-size-small);
-    color: var(--el-text-color-secondary);
-  }
 }
 
 @media (max-width: 480px) {
