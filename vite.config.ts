@@ -13,7 +13,7 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     includedRoutes() {
-      return ['/', '/privacy-policy', '/terms-and-use']
+      return ['/']
     },
   },
 })
